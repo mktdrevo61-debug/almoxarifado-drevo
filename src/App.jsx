@@ -177,7 +177,7 @@ export default function App() {
         <div className="center-screen">
           {!showLoginPanel ? (
             <div className="animate-fade-in landing-hero">
-              <img src="/drevo_logo.png" alt="Drevo" className="brand-logo" />
+              <img src="./drevo_logo.png" alt="Drevo" className="brand-logo" />
               <p className="brand-tagline">Almoxarifado · Controle de Ferramentas</p>
               <button
                 className="btn-primary"
@@ -195,7 +195,7 @@ export default function App() {
               >×</button>
 
               <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-                <img src="/drevo_logo.png" alt="Drevo" style={{ height: '120px', marginBottom: '0.5rem', objectFit: 'contain', filter: 'invert(1) hue-rotate(180deg) saturate(3)' }} />
+                <img src="./drevo_logo.png" alt="Drevo" style={{ height: '120px', marginBottom: '0.5rem', objectFit: 'contain', filter: 'invert(1) hue-rotate(180deg) saturate(3)' }} />
                 <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>
                   {loginMode === 'select' ? 'Como deseja acessar?' : 'Digite a senha do administrador'}
                 </p>
@@ -246,7 +246,7 @@ export default function App() {
           {/* Header */}
           <div className="header">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-              <img src="/drevo_logo.png" alt="Drevo" style={{ height: '28px', objectFit: 'contain', filter: 'invert(1) hue-rotate(180deg) saturate(3)' }} />
+              <img src="./drevo_logo.png" alt="Drevo" style={{ height: '28px', objectFit: 'contain', filter: 'invert(1) hue-rotate(180deg) saturate(3)' }} />
               <div>
                 <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '1px' }}>Almoxarifado</p>
               </div>
