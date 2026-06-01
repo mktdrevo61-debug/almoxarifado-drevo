@@ -50,7 +50,7 @@ export default function App() {
     try {
       setLoading(true);
       setLoadingMsg('Sincronizando com a base...');
-      const res  = await fetch(API_URL);
+      const res  = await fetch(`${API_URL}?_=${Date.now()}`);
       const data = await res.json();
       
       // Suporte para o código antigo (que retornava array direto) e para o novo (com relatórios)
@@ -75,7 +75,8 @@ export default function App() {
 
   useEffect(() => { fetchTools(); }, []);
 
-  // ---- HANDLERS ----
+
+
   const handleAdminLogin = (e) => {
     e.preventDefault();
     if (adminPassword === 'drevo1234') {
@@ -119,6 +120,7 @@ export default function App() {
     try {
       await fetch(API_URL, {
         method: 'POST',
+        mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify(payload),
       });
